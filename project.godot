@@ -13,7 +13,7 @@ config_version=5
 config/name="First Mobile 2D Game"
 config/description="My First Mobile 2D Game using Godot 4"
 config/version="1.0.0.0"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.4", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
