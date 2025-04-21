@@ -7,6 +7,13 @@
 
 > My First Mobile 2D Game using Godot 4
 
+## Resources
+
+- Tutorial:
+  - [YouTube](https://youtu.be/vSwJulHbCW8): Actually, I clone this game in this video with C#
+  - [GitHub](https://github.com/Venex-Source/2D-Platformer): Original project in this video
+  - [YouTube](https://youtu.be/tO3kLfvN6s4): Then I add some features for moblile game
+
 ## Contributors
 
 <div align="center">
