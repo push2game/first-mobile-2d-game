@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://btlqk8a22aoud"]
+
+[ext_resource type="Script" uid="uid://da7d1qalmb5hg" path="res://Components/HurtboxComponent.cs" id="1_tdy6v"]
+
+[node name="HurtboxComponent" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitorable = false
+script = ExtResource("1_tdy6v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true

@@ -12,9 +12,8 @@ tile_set = ExtResource("1_4imm3")
 
 [node name="Player" parent="." instance=ExtResource("2_8a5oj")]
 position = Vector2(211, 261)
-JumpImpulse = 100.0
-MoveSpeed = 100.0
-Gravity = 100.0
+MoveSpeed = 150.0
+Gravity = 350.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")

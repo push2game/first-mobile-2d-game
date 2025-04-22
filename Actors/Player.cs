@@ -12,7 +12,7 @@ public partial class Player : Actor
 	private AnimatedSprite2D _animatedSprite2D;
 
 	private const int MAX_HEALTH = 3;
-	
+
 	private int playerHealth = MAX_HEALTH;
 
 	public override void _Ready()
