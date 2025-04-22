@@ -95,9 +95,7 @@ script = ExtResource("1_mdhmf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jfd1f")
-animation = &"Idle"
-frame = 3
-frame_progress = 0.316186
+animation = &"Fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 6)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=4 uid="uid://ceurhyy16x5tf"]
 
-[ext_resource type="Texture2D" uid="uid://baeic4wgpe3rn" path="res://assets/Sprites/Tiles/tileset.png" id="1_gf6nb"]
+[ext_resource type="Texture2D" uid="uid://baeic4wgpe3rn" path="res://Assets/Sprites/Tiles/tileset.png" id="1_gf6nb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtl3r"]
 texture = ExtResource("1_gf6nb")
@@ -193,7 +193,7 @@ texture = ExtResource("1_gf6nb")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jtl3r")
 
-[node name="Level2" type="Node2D"]
+[node name="Level_2" type="Node2D"]
 
 [node name="Background" type="TileMapLayer" parent="."]
 use_parent_material = true

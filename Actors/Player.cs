@@ -30,11 +30,17 @@ public partial class Player : Actor
 		if (!IsOnFloor())
 		{
 			velocity.Y += Gravity * (float)delta;
+
+			_animatedSprite2D.Play(Velocity.Y > 0 ? "Fall" : "Jump");
+		}
+		else
+		{
+			_animatedSprite2D.Play(direction != 0 ? "Run" : "Idle");
 		}
 
 		if (Input.IsActionJustPressed("Jump") && IsOnFloor())
 		{
-			Velocity = new Vector2(Velocity.X, -JumpImpulse);
+			velocity.Y -= JumpImpulse;
 		}
 
 		if (direction != 0)
@@ -48,7 +54,20 @@ public partial class Player : Actor
 
 		Velocity = velocity;
 
+		UpdateFacingDirection();
 		MoveAndSlide();
+	}
+
+	private void UpdateFacingDirection()
+	{
+		if (Velocity.X > 0)
+		{
+			_animatedSprite2D.FlipH = false;
+		}
+		else if (Velocity.X < 0)
+		{
+			_animatedSprite2D.FlipH = true;
+		}
 	}
 
 	public override void TakeDamage(float amount, Node body)
